@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import { auth } from '../firebase/config';
-import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, signOut } from 'firebase/auth';
+import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider} from 'firebase/auth';
 
 function Login() {
 
@@ -60,44 +60,26 @@ function Login() {
     });
   }
 
-  const signOutGoogle = () => {
-    signOut(auth).then(() => {
-      console.log('centeno kk')
-    }).catch((error) => {
-      console.error(error);
-    });
-  }
-
-  const signOutFacebook = () => {
-    signOut(auth).then(() => {
-      console.log('centeno kk')
-    }).catch((error) => {
-      console.error(error);
-    });
-  }
-
+ 
   return (
     <>
-      <button onClick={signInWithGoogle}>
-        GOOGLE
-      </button>
-      <button onClick={signInWithFacebook}>
-        FACEBOOK
-      </button>
+    <div class="contenedor" >
+      <h1>Fakestagram</h1>
+      </div>    
+      <div class="contenedor2" >
+        <h1>INICIAR SESION </h1>
+      </div>
+      <div class="contenedor3" >
+        <button class='button3' onClick={signInWithGoogle}>
+          GOOGLE
+        </button>
+        <button class='button2'onClick={signInWithFacebook}>
+          FACEBOOK
+        </button>
+      </div>
 
-      <button onClick={signOutGoogle}>
-        LOGOUT GOOGLE
-      </button>
-
-      <button onClick={signOutFacebook}>
-        LOGOUT FACEBOOK
-      </button>
     </>
-    /*
-    <div className="App">
-      <Home/>
-    </div>
-    */
+   
   );
 }
 

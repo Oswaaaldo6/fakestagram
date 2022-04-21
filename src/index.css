@@ -1,4 +1,15 @@
+body {
+  margin: 0;
+  font-family: #FCDFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap" );
 @import url("https://fonts.googleapis.com/css2?family=Capriola&family=Sansita+Swashed:wght@300&display=swap" );
 
@@ -19,6 +30,12 @@ body{
   margin: 0 auto;
 }
 .title h1{
+  color: var(--primary);
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-family: 'Lobster', cursive;
+}
+.contenedor h1{
   color: var(--primary);
   font-size: 2.2rem;
   letter-spacing: 2px;
@@ -107,7 +124,6 @@ label:hover{
   height: 100%;
   background: rgba(0,0,0,0.5);
 }
-
 .backdrop img{
   display: block;
   max-width: 60%;
@@ -115,4 +131,74 @@ label:hover{
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
   border: 3px solid white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left : 20px;
+} /* Blue */
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 20px;
+} /* Red */ 
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button {
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.contenedor{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: -100px;
+}
+.contenedor2{  
+  display: flex;
+  justify-content: center;
+  margin-top: -400px;
+}
+.contenedor3{  
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
