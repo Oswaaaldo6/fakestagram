@@ -1,13 +1,16 @@
 import React from 'react';
-import Title from './comps/Title';
-import UploadForm from './comps/UploadForm';
+import { BrowserRouter,Routes, Route, Link } from "react-router-dom";
+import Login from './comps/Login';
+import Home from './comps/Home';
 
 function App() {
+
   return (
-    <div className="App">
-      <Title/>
-      <UploadForm />
-    </div>
+    <Routes>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/home" element={<Home/>}/>
+    </Routes>
   );
 }
 
