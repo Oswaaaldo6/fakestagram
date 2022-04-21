@@ -1,15 +1,4 @@
-body {
-  margin: 0;
-  font-family: #FCDFFF;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap" );
 @import url("https://fonts.googleapis.com/css2?family=Capriola&family=Sansita+Swashed:wght@300&display=swap" );
 
@@ -118,6 +107,7 @@ label:hover{
   height: 100%;
   background: rgba(0,0,0,0.5);
 }
+
 .backdrop img{
   display: block;
   max-width: 60%;
